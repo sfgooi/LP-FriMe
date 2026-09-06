@@ -16,11 +16,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sfgooi.github.io/LP-FriMe"),
-  title: "金曜21時、15分だけ話す。気が合えば、その週末に会う。｜FriMe",
+  title: "FriMe｜金曜21時、15分だけ話す。気が合えば、その週末に会う。",
   description:
     "マッチすることではなく、実際に会うことをゴールにした新しいデートサービスを検討しています。開発前の意見を募集中です。",
   openGraph: {
-    title: "金曜21時、15分だけ話す。気が合えば、その週末に会う。｜FriMe",
+    title: "FriMe｜金曜21時、15分だけ話す。気が合えば、その週末に会う。",
     description:
       "マッチすることではなく、実際に会うことをゴールにした新しいデートサービスを検討しています。開発前の意見を募集中です。",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "金曜21時、15分だけ話す。気が合えば、その週末に会う。｜FriMe",
+    title: "FriMe｜金曜21時、15分だけ話す。気が合えば、その週末に会う。",
     description:
       "マッチすることではなく、実際に会うことをゴールにした新しいデートサービスを検討しています。開発前の意見を募集中です。",
     images: ["/ogp.png"],
