@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { formUrl } from "@/lib/config";
+import logoMark from "@/public/logo-mark.png";
 
 export default function Nav() {
   return (
@@ -31,7 +32,7 @@ export default function Nav() {
           }}
         >
           <Image
-            src="/logo-mark.png"
+            src={logoMark}
             alt=""
             width={262}
             height={238}
