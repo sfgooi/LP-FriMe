@@ -18,15 +18,16 @@ export default function Hero() {
       style={{ flex: 1, backgroundColor: "var(--cream)" }}
     >
       <div
-        className="flex-1 flex flex-col max-md:justify-evenly md:grid md:grid-cols-[1fr_380px] md:grid-rows-[1fr_auto] md:gap-x-16 md:items-stretch px-5 pt-3 pb-2 md:px-6 md:pt-8 md:pb-6"
+        className="flex-1 flex flex-col max-md:justify-evenly md:grid md:grid-cols-[1fr_380px] md:gap-x-16 md:items-center px-5 pt-3 pb-2 md:px-6 md:pt-8 md:pb-6"
         style={{
           maxWidth: "1100px",
           margin: "0 auto",
           width: "100%",
         }}
       >
+        <div className="max-md:contents md:flex md:flex-col">
         {/* ── Copy ── */}
-        <div className="flex flex-col max-md:gap-3 md:col-start-1 md:row-start-1">
+        <div className="flex flex-col max-md:gap-3 max-md:order-1">
           {/* Category label */}
           <div
             className="md:mb-5"
@@ -122,13 +123,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ── Demo: below copy on SP, right column on PC ── */}
-        <div className="w-full max-w-[380px] mx-auto md:mx-0 md:col-start-2 md:row-start-1 md:row-span-2 md:self-center md:w-[380px] md:max-w-none">
-          <VideoCallDemo />
-        </div>
-
         {/* ── CTA ── */}
-        <div className="md:mt-auto md:col-start-1 md:row-start-2">
+        <div className="max-md:order-3">
             <a
               href={formUrl("hero")}
               target="_blank"
@@ -150,6 +146,12 @@ export default function Hero() {
               約2分／開催日(リリース日)はまだ決まっていません
             </p>
           </div>
+        </div>
+
+        {/* ── Demo: below copy on SP, right column on PC ── */}
+        <div className="w-full max-w-[380px] mx-auto max-md:order-2 md:mx-0 md:w-[380px] md:max-w-none">
+          <VideoCallDemo />
+        </div>
       </div>
 
       <ScrollHint />

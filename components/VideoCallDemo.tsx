@@ -104,7 +104,9 @@ export default function VideoCallDemo() {
                     );
                   })}
                 </div>
-                {choice ? <p className="vc-status">{STATUS[choice]}</p> : null}
+                <p className={`vc-status${choice ? " is-set" : ""}`}>
+                  {choice ? STATUS[choice] : "\u00a0"}
+                </p>
               </div>
             </div>
           )}

@@ -277,7 +277,6 @@ body {
 .vc-stage {
   position: relative;
   min-height: 248px;
-  overflow: hidden;
 }
 
 .vc-feeds {
@@ -467,6 +466,11 @@ body {
   .vc-feeds {
     min-height: 176px;
     height: 176px;
+    overflow: hidden;
+  }
+
+  .vc-status:not(.is-set) {
+    display: none;
   }
 
   .vc-modal {
