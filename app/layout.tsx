@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -50,6 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={inter.variable}>
+      <GoogleAnalytics gaId="G-9X1E159JMH" />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
